@@ -34,6 +34,15 @@
             this.createButton = new System.Windows.Forms.ToolStripMenuItem();
             this.modifyButton = new System.Windows.Forms.ToolStripMenuItem();
             this.removeButton = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.dashboardButtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.recordButtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.modifyButtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeButtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportButtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.requirementMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.designMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.testMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.loginMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,10 +51,14 @@
             this.loginMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.loginMenu.ImageScalingSize = new System.Drawing.Size(40, 40);
             this.loginMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.preferenceMenu});
+            this.preferenceMenu,
+            this.issueMenu,
+            this.requirementMenu,
+            this.designMenu,
+            this.testMenu});
             this.loginMenu.Location = new System.Drawing.Point(0, 0);
             this.loginMenu.Name = "loginMenu";
-            this.loginMenu.Size = new System.Drawing.Size(1803, 54);
+            this.loginMenu.Size = new System.Drawing.Size(1803, 60);
             this.loginMenu.TabIndex = 0;
             this.loginMenu.Text = "menu";
             // 
@@ -86,6 +99,66 @@
             this.removeButton.Size = new System.Drawing.Size(448, 54);
             this.removeButton.Text = "&Remove Project";
             // 
+            // issueMenu
+            // 
+            this.issueMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.dashboardButtn,
+            this.recordButtn,
+            this.modifyButtn,
+            this.removeButtn,
+            this.reportButtn});
+            this.issueMenu.Name = "issueMenu";
+            this.issueMenu.Size = new System.Drawing.Size(109, 50);
+            this.issueMenu.Text = "&Issue";
+            // 
+            // dashboardButtn
+            // 
+            this.dashboardButtn.Name = "dashboardButtn";
+            this.dashboardButtn.Size = new System.Drawing.Size(329, 54);
+            this.dashboardButtn.Text = "&Dashboard";
+            // 
+            // recordButtn
+            // 
+            this.recordButtn.Name = "recordButtn";
+            this.recordButtn.Size = new System.Drawing.Size(329, 54);
+            this.recordButtn.Text = "&Record";
+            // 
+            // modifyButtn
+            // 
+            this.modifyButtn.Name = "modifyButtn";
+            this.modifyButtn.Size = new System.Drawing.Size(329, 54);
+            this.modifyButtn.Text = "&Modify";
+            // 
+            // removeButtn
+            // 
+            this.removeButtn.Name = "removeButtn";
+            this.removeButtn.Size = new System.Drawing.Size(329, 54);
+            this.removeButtn.Text = "&Remove";
+            // 
+            // reportButtn
+            // 
+            this.reportButtn.Name = "reportButtn";
+            this.reportButtn.Size = new System.Drawing.Size(329, 54);
+            this.reportButtn.Text = "&Report";
+            // 
+            // requirementMenu
+            // 
+            this.requirementMenu.Name = "requirementMenu";
+            this.requirementMenu.Size = new System.Drawing.Size(212, 50);
+            this.requirementMenu.Text = "&Requirement";
+            // 
+            // designMenu
+            // 
+            this.designMenu.Name = "designMenu";
+            this.designMenu.Size = new System.Drawing.Size(134, 50);
+            this.designMenu.Text = "&Design";
+            // 
+            // testMenu
+            // 
+            this.testMenu.Name = "testMenu";
+            this.testMenu.Size = new System.Drawing.Size(94, 50);
+            this.testMenu.Text = "&Test";
+            // 
             // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -111,5 +184,14 @@
         private System.Windows.Forms.ToolStripMenuItem createButton;
         private System.Windows.Forms.ToolStripMenuItem modifyButton;
         private System.Windows.Forms.ToolStripMenuItem removeButton;
+        private System.Windows.Forms.ToolStripMenuItem issueMenu;
+        private System.Windows.Forms.ToolStripMenuItem dashboardButtn;
+        private System.Windows.Forms.ToolStripMenuItem recordButtn;
+        private System.Windows.Forms.ToolStripMenuItem modifyButtn;
+        private System.Windows.Forms.ToolStripMenuItem removeButtn;
+        private System.Windows.Forms.ToolStripMenuItem reportButtn;
+        private System.Windows.Forms.ToolStripMenuItem requirementMenu;
+        private System.Windows.Forms.ToolStripMenuItem designMenu;
+        private System.Windows.Forms.ToolStripMenuItem testMenu;
     }
 }
