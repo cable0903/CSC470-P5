@@ -43,6 +43,13 @@
             this.requirementMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.designMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.testMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.countAssigneeItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listAssigneeItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.countArtifactItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listArtifactItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.CountDateItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listDateItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.trendDateItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loginMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +65,7 @@
             this.testMenu});
             this.loginMenu.Location = new System.Drawing.Point(0, 0);
             this.loginMenu.Name = "loginMenu";
-            this.loginMenu.Size = new System.Drawing.Size(1803, 60);
+            this.loginMenu.Size = new System.Drawing.Size(1803, 54);
             this.loginMenu.TabIndex = 0;
             this.loginMenu.Text = "menu";
             // 
@@ -137,6 +144,14 @@
             // 
             // reportButtn
             // 
+            this.reportButtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.countAssigneeItem,
+            this.listAssigneeItem,
+            this.countArtifactItem,
+            this.listArtifactItem,
+            this.CountDateItem,
+            this.listDateItem,
+            this.trendDateItem});
             this.reportButtn.Name = "reportButtn";
             this.reportButtn.Size = new System.Drawing.Size(329, 54);
             this.reportButtn.Text = "&Report";
@@ -158,6 +173,48 @@
             this.testMenu.Name = "testMenu";
             this.testMenu.Size = new System.Drawing.Size(94, 50);
             this.testMenu.Text = "&Test";
+            // 
+            // countAssigneeItem
+            // 
+            this.countAssigneeItem.Name = "countAssigneeItem";
+            this.countAssigneeItem.Size = new System.Drawing.Size(468, 54);
+            this.countAssigneeItem.Text = "Count by Assignee";
+            // 
+            // listAssigneeItem
+            // 
+            this.listAssigneeItem.Name = "listAssigneeItem";
+            this.listAssigneeItem.Size = new System.Drawing.Size(468, 54);
+            this.listAssigneeItem.Text = "List By Assignee";
+            // 
+            // countArtifactItem
+            // 
+            this.countArtifactItem.Name = "countArtifactItem";
+            this.countArtifactItem.Size = new System.Drawing.Size(468, 54);
+            this.countArtifactItem.Text = "Count by Artifact";
+            // 
+            // listArtifactItem
+            // 
+            this.listArtifactItem.Name = "listArtifactItem";
+            this.listArtifactItem.Size = new System.Drawing.Size(468, 54);
+            this.listArtifactItem.Text = "List by Artifact";
+            // 
+            // CountDateItem
+            // 
+            this.CountDateItem.Name = "CountDateItem";
+            this.CountDateItem.Size = new System.Drawing.Size(468, 54);
+            this.CountDateItem.Text = "Count by Date Range";
+            // 
+            // listDateItem
+            // 
+            this.listDateItem.Name = "listDateItem";
+            this.listDateItem.Size = new System.Drawing.Size(468, 54);
+            this.listDateItem.Text = "List by Date Range";
+            // 
+            // trendDateItem
+            // 
+            this.trendDateItem.Name = "trendDateItem";
+            this.trendDateItem.Size = new System.Drawing.Size(468, 54);
+            this.trendDateItem.Text = "Trend by Date Range";
             // 
             // FormLogin
             // 
@@ -193,5 +250,12 @@
         private System.Windows.Forms.ToolStripMenuItem requirementMenu;
         private System.Windows.Forms.ToolStripMenuItem designMenu;
         private System.Windows.Forms.ToolStripMenuItem testMenu;
+        private System.Windows.Forms.ToolStripMenuItem countAssigneeItem;
+        private System.Windows.Forms.ToolStripMenuItem listAssigneeItem;
+        private System.Windows.Forms.ToolStripMenuItem countArtifactItem;
+        private System.Windows.Forms.ToolStripMenuItem listArtifactItem;
+        private System.Windows.Forms.ToolStripMenuItem CountDateItem;
+        private System.Windows.Forms.ToolStripMenuItem listDateItem;
+        private System.Windows.Forms.ToolStripMenuItem trendDateItem;
     }
 }
