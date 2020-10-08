@@ -40,3 +40,4 @@ C:\Users\sjhuo\Desktop\software development\P5\P4 Code\P4 Code\obj\Debug\P4 Code
 C:\Users\sjhuo\Desktop\software development\P5\P4 Code\P4 Code\obj\Debug\P4 Code.csproj.CoreCompileInputs.cache
 C:\Users\sjhuo\Desktop\software development\P5\P4 Code\P4 Code\obj\Debug\P4 Code.exe
 C:\Users\sjhuo\Desktop\software development\P5\P4 Code\P4 Code\obj\Debug\P4 Code.pdb
+C:\Users\sjhuo\Desktop\software development\P5\P4 Code\P4 Code\obj\Debug\P4_Code.ShowProject.resources

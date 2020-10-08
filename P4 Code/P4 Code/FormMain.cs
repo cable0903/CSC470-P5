@@ -32,12 +32,9 @@ namespace P4_Code
             {
                 test.SetAuthentication(user_name, result);
                 LoginUser = test.GetByUserName(user_name);
-//                this.DialogResult = DialogResult.OK;
                 FormLogin login = new FormLogin();
-//                this.Enabled = false;
                 this.Hide();
                 login.ShowDialog();
-//                this.Enabled = true;
             }
             else
             {

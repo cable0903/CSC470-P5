@@ -21,6 +21,23 @@ namespace P4_Code
         {
             CenterToScreen();
         }
+
+        private void selectButton_Click(object sender, EventArgs e)
+        {
+            ShowProject showProject = new ShowProject();
+            this.Hide();
+            showProject.ShowDialog();
+        }
+
+        private void createButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void removeButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
