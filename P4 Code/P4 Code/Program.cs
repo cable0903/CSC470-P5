@@ -16,7 +16,7 @@ namespace P4_Code
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormMain());
+            Application.Run(new FormLogin());
         }
     }
 }

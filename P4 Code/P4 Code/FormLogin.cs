@@ -12,32 +12,40 @@ namespace P4_Code
 {
     public partial class FormLogin : Form
     {
+        public AppUser LoginUser = new AppUser();
         public FormLogin()
         {
             InitializeComponent();
         }
-
         private void FormLogin_Load(object sender, EventArgs e)
         {
             CenterToScreen();
         }
-
-        private void selectButton_Click(object sender, EventArgs e)
+        private void LoginBttn_Click(object sender, EventArgs e)
         {
-            ShowProject showProject = new ShowProject();
-            this.Hide();
-            showProject.ShowDialog();
+            FakeAppUserRepository test = new FakeAppUserRepository();
+            string user_name = UserNameBox.Text;
+            string password = PasswordBox.Text;
+            bool result = test.Login(user_name, password);
+
+            if (result == true)
+            {
+                test.SetAuthentication(user_name, result);
+                LoginUser = test.GetByUserName(user_name);
+                FormMain login = new FormMain();
+                this.Hide();
+                login.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Incorrect UsereName or Password. Try again!", "Attention");
+            }
         }
 
-        private void createButton_Click(object sender, EventArgs e)
+        private void CancelBttn_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
-        private void removeButton_Click(object sender, EventArgs e)
-        {
-
-        }
     }
-    
 }
