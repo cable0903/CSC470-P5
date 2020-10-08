@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\P4 Code",
-    "\\P4 Code\\P4 Code"
+    "\\P5 Code",
+    "\\P5 Code\\P5 Code",
+    "\\P5 Code\\P5 Code\\obj\\Debug"
   ],
-  "SelectedNode": "\\P4 Code\\P4 Code.sln",
+  "SelectedNode": "\\P5 Code\\P5 Code\\P5 Code.csproj",
   "PreviewInSolutionExplorer": false
 }
