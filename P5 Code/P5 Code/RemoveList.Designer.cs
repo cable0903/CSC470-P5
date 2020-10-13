@@ -1,6 +1,6 @@
 ﻿namespace P5_Code
 {
-    partial class ShowProject
+    partial class RemoveList
     {
         /// <summary>
         /// Required designer variable.
@@ -47,7 +47,7 @@
             this.buttSelect.Name = "buttSelect";
             this.buttSelect.Size = new System.Drawing.Size(134, 33);
             this.buttSelect.TabIndex = 1;
-            this.buttSelect.Text = "Select Project";
+            this.buttSelect.Text = "Remove Project";
             this.buttSelect.UseVisualStyleBackColor = true;
             this.buttSelect.Click += new System.EventHandler(this.buttSelect_Click);
             // 
@@ -61,7 +61,7 @@
             this.buttCancel.UseVisualStyleBackColor = true;
             this.buttCancel.Click += new System.EventHandler(this.buttCancel_Click);
             // 
-            // ShowProject
+            // RemoveList
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -69,7 +69,7 @@
             this.Controls.Add(this.buttCancel);
             this.Controls.Add(this.buttSelect);
             this.Controls.Add(this.listBox1);
-            this.Name = "ShowProject";
+            this.Name = "RemoveList";
             this.Text = "Select Project";
             this.ResumeLayout(false);
 

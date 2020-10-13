@@ -85,27 +85,27 @@
             // selectButton
             // 
             this.selectButton.Name = "selectButton";
-            this.selectButton.Size = new System.Drawing.Size(180, 24);
+            this.selectButton.Size = new System.Drawing.Size(173, 24);
             this.selectButton.Text = "&Select Project";
             this.selectButton.Click += new System.EventHandler(this.selectButton_Click);
             // 
             // createButton
             // 
             this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(180, 24);
+            this.createButton.Size = new System.Drawing.Size(173, 24);
             this.createButton.Text = "&Create Project";
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // modifyButton
             // 
             this.modifyButton.Name = "modifyButton";
-            this.modifyButton.Size = new System.Drawing.Size(180, 24);
+            this.modifyButton.Size = new System.Drawing.Size(173, 24);
             this.modifyButton.Text = "&Modify Project";
             // 
             // removeButton
             // 
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(180, 24);
+            this.removeButton.Size = new System.Drawing.Size(173, 24);
             this.removeButton.Text = "&Remove Project";
             this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
@@ -219,16 +219,16 @@
             this.testMenu.Size = new System.Drawing.Size(39, 23);
             this.testMenu.Text = "&Test";
             // 
-            // FormLogin
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1352, 862);
             this.Controls.Add(this.loginMenu);
             this.MainMenuStrip = this.loginMenu;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FormLogin";
-            this.Text = "FormLogin";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FormMain";
+            this.Text = "Main";
             this.Load += new System.EventHandler(this.FormLogin_Load);
             this.loginMenu.ResumeLayout(false);
             this.loginMenu.PerformLayout();

@@ -1,24 +1,37 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace P5_Code
 {
-    public class FakeProjectRepository : IProjectRepository
+    public class FakeProjectRepository //: IProjectRepository
     {
-        private static Dictionary<string, Project> Projects;
+        public static Dictionary<string, Project> Projects;
 
         public FakeProjectRepository()
         {
             if (Projects == null)
             {
                 Projects = new Dictionary<string, Project>();
-                Projects.Add("DaveBish", new Project
+                Projects.Add("Accounting Project", new Project
                 {
-                    ID = 1,
                     Name = "Accounting Project",
+                    ID = 1,
+                });
+                Projects.Add("Quality Assurance Project", new Project
+                {
+                    Name = "Quality Assurance Project",
+                    ID = 2,
+                });
+                Projects.Add("Reports Project", new Project
+                {
+                    Name = "Reports Project",
+                    ID = 3,
                 });
             }
         }
@@ -31,10 +44,21 @@ namespace P5_Code
             }
             return Name;
         }
-        public string Remove(int projectID)
+        public static string Removeproj(int key)
         {
-            string do_stuff = "do_stuff";
-            return do_stuff;
+            Project varname = new Project();
+            foreach (KeyValuePair<string, Project> project in Projects)
+            {
+                if (varname.ID == key)
+                    varname = project.Value;
+
+            }
+            if (!Projects.ContainsValue(varname))
+            {
+                Projects.Remove(varname.Name);
+            }
+            return "done";
+            
         }
         public string Add(Project project, int outID)
         {
