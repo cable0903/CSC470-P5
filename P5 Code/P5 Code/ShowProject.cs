@@ -15,9 +15,9 @@ namespace P5_Code
         public ShowProject()
         {
             InitializeComponent();
-            FormLogin_Load();
+            ShowProject_Load();
         }
-        public void FormLogin_Load()
+        public void ShowProject_Load()
         {
             CenterToScreen();
             FakeProjectRepository newproject = new FakeProjectRepository();

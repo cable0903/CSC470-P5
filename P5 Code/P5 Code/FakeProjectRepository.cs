@@ -47,16 +47,8 @@ namespace P5_Code
         public static string Removeproj(int key)
         {
             Project varname = new Project();
-            foreach (KeyValuePair<string, Project> project in Projects)
-            {
-                if (varname.ID == key)
-                    varname = project.Value;
-
-            }
-            if (!Projects.ContainsValue(varname))
-            {
-                Projects.Remove(varname.Name);
-            }
+            var result = Projects.FirstOrDefault(x => x.Value.ID == key);
+            Projects.Remove(result.Value.Name);
             return "done";
             
         }
