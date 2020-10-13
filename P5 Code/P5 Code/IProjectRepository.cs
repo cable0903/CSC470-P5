@@ -9,7 +9,7 @@ namespace P5_Code
     public interface IProjectRepository
     {
         string Add(Project project, int outID);
-        string Remove(int projectId);
+        string Removeproj(int projectId);
         string Modify(int projectId, Project project);
         List<Project> GetAll();
         bool isDuplicateName(string projectName);

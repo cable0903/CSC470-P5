@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace P5_Code
 {
     public partial class FormLogin : Form
-    {
+    { 
         public AppUser LoginUser = new AppUser();
         public FormLogin()
         {
@@ -35,6 +35,7 @@ namespace P5_Code
                 FormMain login = new FormMain();
                 this.Hide();
                 login.ShowDialog();
+                this.Close();
             }
             else
             {

@@ -12,6 +12,9 @@ namespace P5_Code
 {
     public partial class FormMain : Form
     {
+        public static string newTitle = "Main";
+        public static string patternstr = "Main";
+
         public FormMain()
         {
             InitializeComponent();
@@ -20,6 +23,7 @@ namespace P5_Code
         private void FormMain_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            this.Text = "Main";
         }
 
         private void selectButton_Click(object sender, EventArgs e)
@@ -27,6 +31,16 @@ namespace P5_Code
             ShowProject showProject = new ShowProject();
             this.Hide();
             showProject.ShowDialog();
+            if(newTitle != "Main")
+            {
+                this.Text = patternstr;
+                this.Text = this.Text + " - " + newTitle;
+            }
+            else
+            {
+                this.Text = patternstr;
+            }
+            this.Show();
         }
 
         private void createButton_Click(object sender, EventArgs e)
@@ -37,7 +51,10 @@ namespace P5_Code
 
         private void removeButton_Click(object sender, EventArgs e)
         {
-
+            RemoveList removeProject = new RemoveList();
+            this.Hide();
+            removeProject.ShowDialog();
+            this.Show();
         }
     }
     

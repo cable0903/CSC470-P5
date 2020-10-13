@@ -10,20 +10,18 @@ using System.Windows.Forms;
 
 namespace P5_Code
 {
-    public partial class ShowProject : Form
+    public partial class RemoveList : Form
     {
-        public ShowProject()
+        public RemoveList()
         {
             InitializeComponent();
-            ShowProject_Load();
+            FormLogin_Load();
         }
-        public void ShowProject_Load()
+        public void FormLogin_Load()
         {
             CenterToScreen();
             FakeProjectRepository newproject = new FakeProjectRepository();
             listBox1.ClearSelected();
-            //foreach (KeyValuePair<string, Project> pro in FakeProjectRepository.Projects)
-            //listBox1.Items.Add(pro.Value);
 
             string arr = "0";
             foreach (KeyValuePair<string, Project> pro in FakeProjectRepository.Projects)
@@ -42,7 +40,9 @@ namespace P5_Code
 
         private void buttSelect_Click(object sender, EventArgs e)
         {
-            FormMain.newTitle = listBox1.SelectedItem.ToString();
+            Removeform removeProject = new Removeform(listBox1.SelectedItem.ToString(), listBox1.SelectedIndex);
+            this.Hide();
+            removeProject.ShowDialog();
             this.Close();
         }
     }
