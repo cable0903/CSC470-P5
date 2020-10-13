@@ -124,25 +124,25 @@
             // dashboardButtn
             // 
             this.dashboardButtn.Name = "dashboardButtn";
-            this.dashboardButtn.Size = new System.Drawing.Size(131, 22);
+            this.dashboardButtn.Size = new System.Drawing.Size(180, 22);
             this.dashboardButtn.Text = "&Dashboard";
             // 
             // recordButtn
             // 
             this.recordButtn.Name = "recordButtn";
-            this.recordButtn.Size = new System.Drawing.Size(131, 22);
+            this.recordButtn.Size = new System.Drawing.Size(180, 22);
             this.recordButtn.Text = "&Record";
             // 
             // modifyButtn
             // 
             this.modifyButtn.Name = "modifyButtn";
-            this.modifyButtn.Size = new System.Drawing.Size(131, 22);
+            this.modifyButtn.Size = new System.Drawing.Size(180, 22);
             this.modifyButtn.Text = "&Modify";
             // 
             // removeButtn
             // 
             this.removeButtn.Name = "removeButtn";
-            this.removeButtn.Size = new System.Drawing.Size(131, 22);
+            this.removeButtn.Size = new System.Drawing.Size(180, 22);
             this.removeButtn.Text = "&Remove";
             // 
             // reportButtn
@@ -156,7 +156,7 @@
             this.listDateItem,
             this.trendDateItem});
             this.reportButtn.Name = "reportButtn";
-            this.reportButtn.Size = new System.Drawing.Size(131, 22);
+            this.reportButtn.Size = new System.Drawing.Size(180, 22);
             this.reportButtn.Text = "&Report";
             // 
             // countAssigneeItem
@@ -219,17 +219,17 @@
             this.testMenu.Size = new System.Drawing.Size(39, 23);
             this.testMenu.Text = "&Test";
             // 
-            // FormLogin
+            // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1352, 862);
             this.Controls.Add(this.loginMenu);
             this.MainMenuStrip = this.loginMenu;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "FormLogin";
-            this.Text = "FormLogin";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FormMain";
+            this.Text = "Main";
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.loginMenu.ResumeLayout(false);
             this.loginMenu.PerformLayout();
             this.ResumeLayout(false);

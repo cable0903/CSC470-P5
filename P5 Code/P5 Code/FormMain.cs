@@ -17,7 +17,7 @@ namespace P5_Code
             InitializeComponent();
         }
 
-        private void FormLogin_Load(object sender, EventArgs e)
+        private void FormMain_Load(object sender, EventArgs e)
         {
             CenterToScreen();
         }
@@ -31,7 +31,8 @@ namespace P5_Code
 
         private void createButton_Click(object sender, EventArgs e)
         {
-
+            CreateProject createProject = new CreateProject();
+            createProject.ShowDialog();
         }
 
         private void removeButton_Click(object sender, EventArgs e)

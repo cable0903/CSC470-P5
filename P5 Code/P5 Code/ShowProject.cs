@@ -16,7 +16,8 @@ namespace P5_Code
         {
             InitializeComponent();
         }
-        private void FormLogin_Load(object sender, EventArgs e)
+
+        private void ShowProject_Load(object sender, EventArgs e)
         {
             CenterToScreen();
         }
