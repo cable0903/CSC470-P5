@@ -85,27 +85,27 @@
             // selectButton
             // 
             this.selectButton.Name = "selectButton";
-            this.selectButton.Size = new System.Drawing.Size(173, 24);
+            this.selectButton.Size = new System.Drawing.Size(180, 24);
             this.selectButton.Text = "&Select Project";
             this.selectButton.Click += new System.EventHandler(this.selectButton_Click);
             // 
             // createButton
             // 
             this.createButton.Name = "createButton";
-            this.createButton.Size = new System.Drawing.Size(173, 24);
+            this.createButton.Size = new System.Drawing.Size(180, 24);
             this.createButton.Text = "&Create Project";
             this.createButton.Click += new System.EventHandler(this.createButton_Click);
             // 
             // modifyButton
             // 
             this.modifyButton.Name = "modifyButton";
-            this.modifyButton.Size = new System.Drawing.Size(173, 24);
+            this.modifyButton.Size = new System.Drawing.Size(180, 24);
             this.modifyButton.Text = "&Modify Project";
             // 
             // removeButton
             // 
             this.removeButton.Name = "removeButton";
-            this.removeButton.Size = new System.Drawing.Size(173, 24);
+            this.removeButton.Size = new System.Drawing.Size(180, 24);
             this.removeButton.Text = "&Remove Project";
             this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
             // 
@@ -124,25 +124,25 @@
             // dashboardButtn
             // 
             this.dashboardButtn.Name = "dashboardButtn";
-            this.dashboardButtn.Size = new System.Drawing.Size(131, 22);
+            this.dashboardButtn.Size = new System.Drawing.Size(180, 22);
             this.dashboardButtn.Text = "&Dashboard";
             // 
             // recordButtn
             // 
             this.recordButtn.Name = "recordButtn";
-            this.recordButtn.Size = new System.Drawing.Size(131, 22);
+            this.recordButtn.Size = new System.Drawing.Size(180, 22);
             this.recordButtn.Text = "&Record";
             // 
             // modifyButtn
             // 
             this.modifyButtn.Name = "modifyButtn";
-            this.modifyButtn.Size = new System.Drawing.Size(131, 22);
+            this.modifyButtn.Size = new System.Drawing.Size(180, 22);
             this.modifyButtn.Text = "&Modify";
             // 
             // removeButtn
             // 
             this.removeButtn.Name = "removeButtn";
-            this.removeButtn.Size = new System.Drawing.Size(131, 22);
+            this.removeButtn.Size = new System.Drawing.Size(180, 22);
             this.removeButtn.Text = "&Remove";
             // 
             // reportButtn
@@ -156,7 +156,7 @@
             this.listDateItem,
             this.trendDateItem});
             this.reportButtn.Name = "reportButtn";
-            this.reportButtn.Size = new System.Drawing.Size(131, 22);
+            this.reportButtn.Size = new System.Drawing.Size(180, 22);
             this.reportButtn.Text = "&Report";
             // 
             // countAssigneeItem
@@ -229,7 +229,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormMain";
             this.Text = "Main";
-            this.Load += new System.EventHandler(this.FormLogin_Load);
+            this.Load += new System.EventHandler(this.FormMain_Load);
             this.loginMenu.ResumeLayout(false);
             this.loginMenu.PerformLayout();
             this.ResumeLayout(false);

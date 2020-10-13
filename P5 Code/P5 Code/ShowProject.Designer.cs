@@ -71,6 +71,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "ShowProject";
             this.Text = "Select Project";
+            this.Load += new System.EventHandler(this.ShowProject_Load);
             this.ResumeLayout(false);
 
         }

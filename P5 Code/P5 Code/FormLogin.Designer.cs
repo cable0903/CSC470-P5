@@ -89,7 +89,7 @@
             this.CancelBttn.UseVisualStyleBackColor = true;
             this.CancelBttn.Click += new System.EventHandler(this.CancelBttn_Click);
             // 
-            // FormMain
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -100,7 +100,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PasswordBox);
             this.Controls.Add(this.UserNameBox);
-            this.Name = "FormMain";
+            this.Name = "FormLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.ResumeLayout(false);
