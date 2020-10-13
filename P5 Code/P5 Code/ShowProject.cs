@@ -43,6 +43,9 @@ namespace P5_Code
         private void buttSelect_Click(object sender, EventArgs e)
         {
             FormMain.newTitle = listBox1.SelectedItem.ToString();
+            FormMain selectedProject = new FormMain();
+            this.Hide();
+            selectedProject.ShowDialog();
             this.Close();
         }
     }

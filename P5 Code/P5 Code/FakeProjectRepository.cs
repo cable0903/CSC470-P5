@@ -38,9 +38,11 @@ namespace P5_Code
         public List<Project> GetAll()
         {
             List<Project> Name = new List<Project>();
+            List<Project> ID = new List<Project>();
             foreach (KeyValuePair<string, Project> project in Projects)
             {
                 Name.Add(project.Value);
+                ID.Add(project.Value);
             }
             return Name;
         }
@@ -54,6 +56,7 @@ namespace P5_Code
         }
         public string Add(Project project, int outID)
         {
+            // Project newProject = new Project();
             string do_stuff = "do_stuff";
             return do_stuff;
         }

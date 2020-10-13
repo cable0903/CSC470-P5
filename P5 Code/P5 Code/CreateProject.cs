@@ -21,6 +21,8 @@ namespace P5_Code
         private void CreateProject_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            FakeProjectRepository newproject = new FakeProjectRepository();
+
         }
 
         private void projectNameText_TextChanged(object sender, EventArgs e)
@@ -41,7 +43,6 @@ namespace P5_Code
                 MessageBox.Show("Project name is empty or blank.");
                 return;
             }
-            MessageBox.Show(newProjectName);
         }
     }
 }

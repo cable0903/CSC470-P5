@@ -32,7 +32,7 @@ namespace P5_Code
             {
                 test.SetAuthentication(user_name, result);
                 LoginUser = test.GetByUserName(user_name);
-                FormMain login = new FormMain();
+                ShowProject login = new ShowProject();
                 this.Hide();
                 login.ShowDialog();
                 this.Close();

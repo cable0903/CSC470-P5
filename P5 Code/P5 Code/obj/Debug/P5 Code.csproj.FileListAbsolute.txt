@@ -47,3 +47,5 @@ C:\Users\storm\Source\Repos\cable0903\CSC470-P5\P5 Code\P5 Code\obj\Debug\P5_Cod
 C:\Users\sjhuo\Desktop\software development\P5\P5 Code\P5 Code\obj\Debug\P5_Code.CreateProject.resources
 C:\Users\sjhuo\Desktop\software development\P5\P5 Code\P5 Code\obj\Debug\P5_Code.Removeform.resources
 C:\Users\sjhuo\Desktop\software development\P5\P5 Code\P5 Code\obj\Debug\P5_Code.RemoveList.resources
+C:\Users\storm\Source\Repos\cable0903\CSC470-P5\P5 Code\P5 Code\obj\Debug\P5_Code.Removeform.resources
+C:\Users\storm\Source\Repos\cable0903\CSC470-P5\P5 Code\P5 Code\obj\Debug\P5_Code.RemoveList.resources

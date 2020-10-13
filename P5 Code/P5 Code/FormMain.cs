@@ -4,6 +4,8 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,16 +16,16 @@ namespace P5_Code
     {
         public static string newTitle = "Main";
         public static string patternstr = "Main";
-
+        
         public FormMain()
         {
             InitializeComponent();
+
         }
 
         private void FormMain_Load(object sender, EventArgs e)
         {
             CenterToScreen();
-            this.Text = "Main";
         }
 
         private void selectButton_Click(object sender, EventArgs e)
@@ -31,7 +33,7 @@ namespace P5_Code
             ShowProject showProject = new ShowProject();
             this.Hide();
             showProject.ShowDialog();
-            if(newTitle != "Main")
+            if(newTitle != patternstr)
             {
                 this.Text = patternstr;
                 this.Text = this.Text + " - " + newTitle;
