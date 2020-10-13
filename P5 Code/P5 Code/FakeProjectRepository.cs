@@ -46,7 +46,6 @@ namespace P5_Code
         }
         public static string Removeproj(int key)
         {
-            Project varname = new Project();
             var result = Projects.FirstOrDefault(x => x.Value.ID == key);
             Projects.Remove(result.Value.Name);
             return "done";

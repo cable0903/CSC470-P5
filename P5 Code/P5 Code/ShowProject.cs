@@ -40,9 +40,13 @@ namespace P5_Code
             this.Close();
         }
 
-        private void buttSelect_Click(object sender, EventArgs e)
+        public void buttSelect_Click(object sender, EventArgs e)
         {
+            AppUser user = new AppUser();
+            var usr = user.UserName;
+            var pro = FakeProjectRepository.Projects.FirstOrDefault(y => y.Value.ID == listBox1.SelectedIndex);
             FormMain.newTitle = listBox1.SelectedItem.ToString();
+//            var result = FakePreferenceRepository.SetPreference(usr, pro.Value.Name, "value");
             this.Close();
         }
     }
