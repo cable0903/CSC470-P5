@@ -41,6 +41,7 @@ namespace P5_Code
                 MessageBox.Show("Project name is empty or blank.");
                 return;
             }
+            MessageBox.Show(newProjectName);
         }
     }
 }
