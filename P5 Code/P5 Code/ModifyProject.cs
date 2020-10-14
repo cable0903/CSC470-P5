@@ -24,12 +24,12 @@ namespace P5_Code
             projectModify = tomodify;
             ProjectRepository = currRepository;
             allprojects = ProjectRepository.GetAll();
-
         }
 
         private void ModifyProject_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            textBox1.Select();
             textBox1.Text = projectModify.Name;
         }
 

@@ -48,7 +48,7 @@ namespace P5_Code
             }
             else if(answer == DialogResult.Cancel)
             {
-                Application.Exit();
+                this.Close();
             }
         }
 

@@ -101,6 +101,7 @@
             this.modifyButton.Name = "modifyButton";
             this.modifyButton.Size = new System.Drawing.Size(180, 24);
             this.modifyButton.Text = "&Modify Project";
+            this.modifyButton.Click += new System.EventHandler(this.modifyButton_Click);
             // 
             // removeButton
             // 
@@ -124,25 +125,25 @@
             // dashboardButtn
             // 
             this.dashboardButtn.Name = "dashboardButtn";
-            this.dashboardButtn.Size = new System.Drawing.Size(180, 22);
+            this.dashboardButtn.Size = new System.Drawing.Size(131, 22);
             this.dashboardButtn.Text = "&Dashboard";
             // 
             // recordButtn
             // 
             this.recordButtn.Name = "recordButtn";
-            this.recordButtn.Size = new System.Drawing.Size(180, 22);
+            this.recordButtn.Size = new System.Drawing.Size(131, 22);
             this.recordButtn.Text = "&Record";
             // 
             // modifyButtn
             // 
             this.modifyButtn.Name = "modifyButtn";
-            this.modifyButtn.Size = new System.Drawing.Size(180, 22);
+            this.modifyButtn.Size = new System.Drawing.Size(131, 22);
             this.modifyButtn.Text = "&Modify";
             // 
             // removeButtn
             // 
             this.removeButtn.Name = "removeButtn";
-            this.removeButtn.Size = new System.Drawing.Size(180, 22);
+            this.removeButtn.Size = new System.Drawing.Size(131, 22);
             this.removeButtn.Text = "&Remove";
             // 
             // reportButtn
@@ -156,7 +157,7 @@
             this.listDateItem,
             this.trendDateItem});
             this.reportButtn.Name = "reportButtn";
-            this.reportButtn.Size = new System.Drawing.Size(180, 22);
+            this.reportButtn.Size = new System.Drawing.Size(131, 22);
             this.reportButtn.Text = "&Report";
             // 
             // countAssigneeItem

@@ -36,25 +36,28 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(250, 190);
+            this.textBox1.Location = new System.Drawing.Point(122, 47);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(438, 22);
+            this.textBox1.Size = new System.Drawing.Size(330, 20);
             this.textBox1.TabIndex = 0;
             // 
             // ModifyProjectName
             // 
             this.ModifyProjectName.AutoSize = true;
-            this.ModifyProjectName.Location = new System.Drawing.Point(125, 195);
+            this.ModifyProjectName.Location = new System.Drawing.Point(28, 50);
+            this.ModifyProjectName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.ModifyProjectName.Name = "ModifyProjectName";
-            this.ModifyProjectName.Size = new System.Drawing.Size(105, 17);
+            this.ModifyProjectName.Size = new System.Drawing.Size(77, 13);
             this.ModifyProjectName.TabIndex = 1;
-            this.ModifyProjectName.Text = "Project Name : ";
+            this.ModifyProjectName.Text = "Project Name: ";
             // 
             // Modify_Cancel
             // 
-            this.Modify_Cancel.Location = new System.Drawing.Point(468, 334);
+            this.Modify_Cancel.Location = new System.Drawing.Point(198, 99);
+            this.Modify_Cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Modify_Cancel.Name = "Modify_Cancel";
-            this.Modify_Cancel.Size = new System.Drawing.Size(90, 43);
+            this.Modify_Cancel.Size = new System.Drawing.Size(87, 35);
             this.Modify_Cancel.TabIndex = 2;
             this.Modify_Cancel.Text = "Cancel ";
             this.Modify_Cancel.UseVisualStyleBackColor = true;
@@ -62,9 +65,10 @@
             // 
             // Modify
             // 
-            this.Modify.Location = new System.Drawing.Point(581, 334);
+            this.Modify.Location = new System.Drawing.Point(330, 99);
+            this.Modify.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Modify.Name = "Modify";
-            this.Modify.Size = new System.Drawing.Size(128, 43);
+            this.Modify.Size = new System.Drawing.Size(96, 35);
             this.Modify.TabIndex = 3;
             this.Modify.Text = "Modify";
             this.Modify.UseVisualStyleBackColor = true;
@@ -72,13 +76,14 @@
             // 
             // ModifyProject
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(529, 166);
             this.Controls.Add(this.Modify);
             this.Controls.Add(this.Modify_Cancel);
             this.Controls.Add(this.ModifyProjectName);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ModifyProject";
             this.Text = "Modify Project";
             this.Load += new System.EventHandler(this.ModifyProject_Load);

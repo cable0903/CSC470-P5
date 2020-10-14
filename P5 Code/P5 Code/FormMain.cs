@@ -46,14 +46,20 @@ namespace P5_Code
             CreateProject createProject = new CreateProject();
             createProject.ShowDialog();
         }
-
+        private void modifyButton_Click(object sender, EventArgs e)
+        {
+            ModifyProject modifyProject = new ModifyProject();
+            modifyProject.ShowDialog();
+        }
         private void removeButton_Click(object sender, EventArgs e)
         {
             RemoveList removeProject = new RemoveList();
             this.Hide();
             removeProject.ShowDialog();
             this.Show();
-        } 
+        }
+
+
     }
     
 }

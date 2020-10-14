@@ -44,13 +44,18 @@ namespace P5_Code
             createProject.Name = newProjectName;
             if (projectNameText.Text.Trim() == string.Empty)
             {
-                MessageBox.Show("Project name is empty or blank. Please enter a project name.");
+                MessageBox.Show(FakeProjectRepository.EMPTY_PROJECTNAME_ERROR);
                 return;
             }
 
             if(duplicate == false)
             {
                 string newProject = FakeProjectRepository.Add(createProject, FakeProjectRepository.Projects.Count()+1);
+                MessageBox.Show("Project Added Successfully.");
+            }
+            else
+            {
+                MessageBox.Show(FakeProjectRepository.DUPLPICATEPROJECTNAME_ERROR);
             }
             // add way to add new project to show project form
             this.Close();
