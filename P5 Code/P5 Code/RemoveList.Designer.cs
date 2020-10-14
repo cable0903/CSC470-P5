@@ -70,7 +70,7 @@
             this.Controls.Add(this.buttSelect);
             this.Controls.Add(this.listBox1);
             this.Name = "RemoveList";
-            this.Text = "Select Project";
+            this.Text = "Remove Project";
             this.ResumeLayout(false);
 
         }

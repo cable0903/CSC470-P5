@@ -72,6 +72,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Removeform";
             this.Text = "Remove";
+            this.Load += new System.EventHandler(this.Removeform_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

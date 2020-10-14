@@ -38,5 +38,10 @@ namespace P5_Code
             if (res == DialogResult.No)
                 this.Close();
         }
+
+        private void Removeform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

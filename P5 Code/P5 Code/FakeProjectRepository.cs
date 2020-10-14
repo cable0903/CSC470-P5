@@ -49,7 +49,6 @@ namespace P5_Code
             var result = Projects.FirstOrDefault(x => x.Value.ID == key);
             Projects.Remove(result.Value.Name);
             return "done";
-            
         }
         public static string Add(Project project, int outID)
         {
@@ -60,6 +59,7 @@ namespace P5_Code
             });
             return "done";
         }
+
         public string Modify(int projectId, Project project)
         {
             string do_stuff = "do_stuff";

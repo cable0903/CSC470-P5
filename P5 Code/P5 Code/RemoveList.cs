@@ -22,12 +22,13 @@ namespace P5_Code
             CenterToScreen();
             FakeProjectRepository newproject = new FakeProjectRepository();
             listBox1.ClearSelected();
-
             string arr = "0";
+            int num = 0;
             foreach (KeyValuePair<string, Project> pro in FakeProjectRepository.Projects)
             {
                 arr = pro.Key;
-                listBox1.Items.Add(arr);
+                num = pro.Value.ID;
+                listBox1.Items.Add(num + " - " + arr);
             }
             listBox1.EndUpdate();
             

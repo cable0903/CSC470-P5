@@ -22,7 +22,7 @@ namespace P5_Code
             InitializeComponent();
             if(newTitle != mainTitle)
             {
-                this.Text = mainTitle + " - " +  newTitle;
+                this.Text = mainTitle + " " +  newTitle;
             }
             else
             {
@@ -53,7 +53,7 @@ namespace P5_Code
             this.Hide();
             removeProject.ShowDialog();
             this.Show();
-        }
+        } 
     }
     
 }
