@@ -56,6 +56,12 @@
     <Compile Include="CreateProject.Designer.cs">
       <DependentUpon>CreateProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModifyProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModifyProject.Designer.cs">
+      <DependentUpon>ModifyProject.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </Compile>
     <EmbeddedResource Include="CreateProject.resx">
       <DependentUpon>CreateProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModifyProject.resx">
+      <DependentUpon>ModifyProject.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>

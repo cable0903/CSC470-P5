@@ -9,8 +9,15 @@ using System.Windows.Forms;
 
 namespace P5_Code
 {
-    public class FakeProjectRepository //: IProjectRepository
+    public class FakeProjectRepository //: IPreferenceRepository
+
     {
+        public const string ERROR = " ";
+        public const string MODIFIEDPROJECTID_ERROR = "Cannot modify your current session project.";
+        public const string DUPLPICATEPROJECTNAME_ERROR = "Project name already exists.";
+        public const string NOPROJECTFOUND_ERROR = "No project found.";
+        public const string EMPTY_PROJECTNAME_ERROR = "Project name is empty or blank.";
+
         public static Dictionary<string, Project> Projects;
 
         public FakeProjectRepository()
