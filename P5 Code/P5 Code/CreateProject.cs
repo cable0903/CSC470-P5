@@ -42,7 +42,7 @@ namespace P5_Code
             Project createProject = new Project();
             bool duplicate = FakeProjectRepository.isDuplicateName(newProjectName);
             createProject.Name = newProjectName;
-            if (projectNameText.Text == string.Empty)
+            if (projectNameText.Text.Trim() == string.Empty)
             {
                 MessageBox.Show("Project name is empty or blank. Please enter a project name.");
                 return;
