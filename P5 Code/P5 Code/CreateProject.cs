@@ -12,7 +12,7 @@ namespace P5_Code
 {
     public partial class CreateProject : Form
     {
-        string newProjectName;
+        public static string newProjectName;
         public CreateProject()
         {
             InitializeComponent();
@@ -21,6 +21,7 @@ namespace P5_Code
         private void CreateProject_Load(object sender, EventArgs e)
         {
             CenterToScreen();
+            projectNameText.Select();
             FakeProjectRepository newproject = new FakeProjectRepository();
 
         }
@@ -38,11 +39,21 @@ namespace P5_Code
 
         private void addButton_Click(object sender, EventArgs e)
         {
-            if(projectNameText.Text.Trim() == string.Empty)
+            Project createProject = new Project();
+            bool duplicate = FakeProjectRepository.isDuplicateName(newProjectName);
+            createProject.Name = newProjectName;
+            if (projectNameText.Text == string.Empty)
             {
-                MessageBox.Show("Project name is empty or blank.");
+                MessageBox.Show("Project name is empty or blank. Please enter a project name.");
                 return;
             }
+
+            if(duplicate == false)
+            {
+                string newProject = FakeProjectRepository.Add(createProject, FakeProjectRepository.Projects.Count()+1);
+            }
+            // add way to add new project to show project form
+            this.Close();
         }
     }
 }

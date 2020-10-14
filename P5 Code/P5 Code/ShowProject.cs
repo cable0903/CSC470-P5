@@ -42,14 +42,14 @@ namespace P5_Code
 
         public void buttSelect_Click(object sender, EventArgs e)
         {
-            AppUser user = new AppUser();
-            var usr = user.UserName;
-            var pro = FakeProjectRepository.Projects.FirstOrDefault(y => y.Value.ID == listBox1.SelectedIndex);
+            //AppUser user = new AppUser();
+            //var usr = user.UserName;
+            //var pro = FakeProjectRepository.Projects.FirstOrDefault(y => y.Value.ID == listBox1.SelectedIndex);
             FormMain.newTitle = listBox1.SelectedItem.ToString();
             FormMain selectedProject = new FormMain();
             this.Hide();
             selectedProject.ShowDialog();
-            this.Close();
+            this.Show();
         }
     }
 }

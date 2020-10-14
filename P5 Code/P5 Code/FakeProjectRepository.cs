@@ -38,11 +38,9 @@ namespace P5_Code
         public List<Project> GetAll()
         {
             List<Project> Name = new List<Project>();
-            List<Project> ID = new List<Project>();
             foreach (KeyValuePair<string, Project> project in Projects)
             {
                 Name.Add(project.Value);
-                ID.Add(project.Value);
             }
             return Name;
         }
@@ -53,21 +51,40 @@ namespace P5_Code
             return "done";
             
         }
-        public string Add(Project project, int outID)
+        public static string Add(Project project, int outID)
         {
-            // Project newProject = new Project();
-            string do_stuff = "do_stuff";
-            return do_stuff;
+            FakeProjectRepository.Projects.Add(project.Name, new Project
+            {
+                Name = project.Name,
+                ID = outID,
+            });
+            return "done";
         }
         public string Modify(int projectId, Project project)
         {
             string do_stuff = "do_stuff";
             return do_stuff;
         }
-        public bool isDuplicateName(string projectName)
+        public static bool isDuplicateName(string projectName)
         {
-            bool do_stuff = true;
-            return do_stuff;
+            List<Project> Name = new List<Project>();
+            int flag = 0;
+            foreach (KeyValuePair<string, Project> project in Projects)
+            {
+                if(project.Key == projectName)
+                {
+                    flag = 1;
+                }
+            }
+
+            if(flag == 0)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }

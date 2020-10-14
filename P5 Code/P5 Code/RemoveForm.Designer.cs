@@ -62,7 +62,7 @@
             this.confirmbox.TabIndex = 2;
             this.confirmbox.Text = "Project to remove:";
             // 
-            // Remove
+            // Removeform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -70,7 +70,7 @@
             this.Controls.Add(this.confirmbox);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Remove";
+            this.Name = "Removeform";
             this.Text = "Remove";
             this.ResumeLayout(false);
             this.PerformLayout();

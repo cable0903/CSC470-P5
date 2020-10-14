@@ -29,7 +29,7 @@ namespace P5_Code
 
         public void button1_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Are you sure you want to permanetly remove this project", "Attention", MessageBoxButtons.YesNo);
+            DialogResult res = MessageBox.Show("Are you sure you want to permanently remove this project", "Attention", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
                 string result = FakeProjectRepository.Removeproj(useid+1);

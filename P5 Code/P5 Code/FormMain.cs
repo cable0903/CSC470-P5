@@ -15,12 +15,19 @@ namespace P5_Code
     public partial class FormMain : Form
     {
         public static string newTitle = "Main";
-        public static string patternstr = "Main";
+        public static string mainTitle = "Main";
         
         public FormMain()
         {
             InitializeComponent();
-
+            if(newTitle != mainTitle)
+            {
+                this.Text = mainTitle + " - " +  newTitle;
+            }
+            else
+            {
+                this.Text = mainTitle;
+            }
         }
 
         private void FormMain_Load(object sender, EventArgs e)
@@ -31,18 +38,7 @@ namespace P5_Code
         private void selectButton_Click(object sender, EventArgs e)
         {
             ShowProject showProject = new ShowProject();
-            this.Hide();
-            showProject.ShowDialog();
-            if(newTitle != patternstr)
-            {
-                this.Text = patternstr;
-                this.Text = this.Text + " - " + newTitle;
-            }
-            else
-            {
-                this.Text = patternstr;
-            }
-            this.Show();
+            this.Close();
         }
 
         private void createButton_Click(object sender, EventArgs e)
